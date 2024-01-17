@@ -1,0 +1,345 @@
+/* Google Fonts - Poppins */ 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+body{
+    margin: 0;
+    background-color: #F1F3F0;
+}
+.header{
+    background-color: #35393C;
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.header-ul{
+display: flex;
+margin: 10px;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+
+.header-li{
+    list-style: none;
+    padding: 20px 40px 20px 4px;
+}
+
+.image{
+    height: 120vh;
+    object-fit: cover;
+}
+
+
+.main {
+    height: 120vh;
+    width: 100%;
+}
+
+.wrapper,
+.slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    overflow: hidden;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.slide .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slide .image-data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+}
+
+.image-data span.text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+.text {
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    z-index: 150;
+    top: 30%;
+}
+
+.image-data h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #fff;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #333;
+    background: #fff;
+    text-decoration: none;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+}
+
+a.button:hover {
+    color: #fff;
+    background-color: #c87e4f;
+}
+
+/* swiper button css */
+.nav-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    /* background: rgba(255, 255, 255, 0.3); */
+}
+
+.swiper-button-next {
+    right: 50px;
+}
+
+.swiper-button-prev {
+    left: 50px;
+}
+
+.nav-btn::before,
+.nav-btn::after {
+    font-size: 25px;
+    color: #fff;
+}
+
+.swiper-pagination-bullet {
+    opacity: 1;
+    height: 12px;
+    width: 12px;
+    background-color: #fff;
+    visibility: hidden;
+}
+
+.swiper-pagination-bullet-active {
+    border: 2px solid #fff;
+    background-color: #c87e4f;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-btn {
+        visibility: hidden;
+    }
+
+    .swiper-pagination-bullet {
+        visibility: visible;
+    }
+}
+
+.De{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 900;
+}
+.hr1{
+    margin: auto;
+    width: 25%;
+    padding-bottom: 50px;
+}
+
+.Intro{
+    margin-bottom: 100px;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.image1{
+    width: 390px;
+    height: 300px;
+    margin: 0px 20px 50px 20px;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    background-color: #E7E7E7;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.info1{
+    margin-right: 30px;
+    width: 40%;
+}
+.info2{
+    width: 40%;
+}
+.infot1{
+    font-size: 30px;
+    font-weight: 900;
+    /* text-align: center; */
+}
+
+.info1 > hr{
+    /* width: 28%; */
+    /* margin: auto; */
+    margin-bottom: 50px;
+    margin-top: 10px;
+    color: #DCD9D9;
+}
+.info2 > hr{
+    /* width: 28%; */
+    /* margin: auto; */
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.infot2{
+    font-size: 15px;
+    font-weight: 100;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+.infot3{
+    color: #82829C;
+    margin-left: 40px;
+    margin-bottom: 60px;
+}
+
+.more{
+    color: #C83429;
+}
+
+.context1{
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.context2{
+    text-align: center;
+    text-wrap: wrap;
+    width: 70%;
+    margin: auto;
+    color: #828282;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+}
+
+.email{
+    margin-top: 60px;
+}
+
+.address{
+    margin-top: 60px;
+    margin-right: 80px;
+}
+
+.number{
+    margin-top: 60px;
+    margin-right: 80px;
+}
+.address-text{
+    color: #F09E0E;
+    font-size: 25px;
+    margin-bottom: 15px; 
+    font-weight: 500;
+}
+.number-text{
+    color: #F09E0E;
+    font-size: 20px;
+    margin-bottom: 15px; 
+}
+
+.email-text{
+    color: #F09E0E;
+    font-size: 19px;
+    margin-bottom: 15px; 
+}
+
+p > a{
+    color: #B4B5B4;
+}
+
+.mymy{
+    width: 220px;
+    color: #B4B5B4;
+}
+.mymys{
+    width: 230px;
+    color: #B4B5B4;
+}
+
+.footer{
+    background-color: #35393C;
+    margin-top: 100px;
+    padding-top: 60px;
+    padding-bottom: 200px;
+    padding-left: 200px;
+    color: white;
+}
+.footerdis{
+    display: flex;
+}
+.footer-text{
+    display: flex;
+    margin-bottom: 30px;
+}
+.footerli{
+    margin-right: 40px;
+}
+.compname{
+    margin-right: 50px;
+    font-size: 20px;
+}
+li{
+    list-style-type: none;
+}
+/* 
+@media screen and (){
+    
+} */
