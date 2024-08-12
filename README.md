@@ -1,3 +1,3 @@
-# De-Alice\
+# De-Alice
 
 https://dealice.netlify.app/
