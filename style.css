@@ -437,4 +437,7 @@ li{
         padding-left: 20px;
         padding-bottom: 100px;
     }
+    .context2{
+        text-align: start;
+    }
 }
