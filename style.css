@@ -24,6 +24,24 @@ a{
     color: white;
 }
 
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.container{
+    /* display: none; */
+}
+
+.check{
+    width: 10px;
+}
+
 .header-ul{
 display: flex;
 margin: 10px;
@@ -39,6 +57,7 @@ justify-content: center;
 
 .image{
     height: 120vh;
+    width: 100px;
     object-fit: cover;
 }
 
@@ -91,7 +110,6 @@ justify-content: center;
 }
 .text {
     color: #FFFFFF;
-    font-size: 15px;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
@@ -169,7 +187,7 @@ a.button:hover {
     }
 }
 
-.De{
+#De{
     margin-top: 50px;
     margin-bottom: 20px;
     font-size: 28px;
@@ -199,7 +217,7 @@ a.button:hover {
     margin: 0px 20px 50px 20px;
 }
 
-.info{
+#info{
     display: flex;
     justify-content: center;
     background-color: #E7E7E7;
@@ -265,7 +283,7 @@ a.button:hover {
     color: #828282;
 }
 
-.contact-container{
+#contact-container{
     display: flex;
     justify-content: center;
 }
@@ -286,8 +304,7 @@ a.button:hover {
 .address-text{
     color: #F09E0E;
     font-size: 25px;
-    margin-bottom: 15px; 
-    font-weight: 500;
+    margin-bottom: 15px;
 }
 .number-text{
     color: #F09E0E;
@@ -336,10 +353,88 @@ p > a{
     margin-right: 50px;
     font-size: 20px;
 }
+
+.policy{
+    font-size: 20px;
+}
+
 li{
     list-style-type: none;
 }
-/* 
-@media screen and (){
+
+@media screen and (max-width: 760px){
+
+    .container{
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
     
-} */
+    .container{
+
+    }
+
+    .header{
+        display: none;
+    }
+
+    .image-container{
+        display: block;
+        margin-left: 1vw;
+    }
+    #contact-container{
+        display: block;
+        text-align: center;
+    }
+    .address, .number{
+        margin-right: 0;
+    }
+    .mymy, .mymys{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: start;
+    }
+    .text{
+        font-size: 75px;
+    }
+    .image1-container, .image2-container, .image3-container{
+        display: flex;
+        justify-content: center;
+    }
+    #info{
+        display: block;
+    }
+    .info1, .info2{
+        width: 95%;
+    }
+    .infot1{
+        margin-left: 15px;
+    }
+    .info1 > hr, .info2 > hr{
+        margin-left: 15px;
+        margin-bottom: 25px;
+    }
+    .more{
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+    .infot3{
+        margin-bottom: 20px;
+    }
+    .mymyss{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mymyss > a{
+        width: 193px;
+        text-align: start;
+    }
+    .footer{
+        padding-left: 20px;
+        padding-bottom: 100px;
+    }
+}
