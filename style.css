@@ -303,7 +303,7 @@ a.button:hover {
 }
 .address-text{
     color: #F09E0E;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 15px;
 }
 .number-text{
@@ -314,7 +314,7 @@ a.button:hover {
 
 .email-text{
     color: #F09E0E;
-    font-size: 19px;
+    font-size: 20px;
     margin-bottom: 15px; 
 }
 
@@ -439,5 +439,15 @@ li{
     }
     .context2{
         text-align: start;
+    }
+}
+
+@media screen and (max-width: 790px){
+    #contact-container{
+        width: 100vw;
+    }
+
+    .address, .number{
+        margin-right: 20px;
     }
 }
